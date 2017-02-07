@@ -1,0 +1,599 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@font-face {
+    font-family: "Satisfy";
+    src: url(../fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Overlock";
+    src: url(../fonts/Overlock-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src: url(../fonts/Overlock-Bold.ttf);
+    font-weight: bold;
+}
+
+.title, h2, .default-btn {
+    font-family: "Satisfy";
+}
+
+body {
+    font-family: "Overlock";
+}
+
+h3 {
+    font-family: "Satisfy";
+    font-size: 1.3em;
+    color: #AA5044;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.last {
+    padding-bottom: 20px;
+}
+
+.small {
+    font-size: 0.83em;
+}
+
+.important {
+    color: #AA5044;
+    font-weight: bold;
+}
+
+.important a {
+    color: #AA5044;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid {
+    padding-bottom: 20px;
+}
+
+/* Formulaire */
+label {
+    font-weight: normal;
+    font-family: "Overlock";
+    color: black;
+}
+
+input, textarea {
+    background-color: #F0F1F1;
+    border:none;
+    width: 95%;
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    background-color: #dedede;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+}
+
+/* Isotope */
+.grid-sizer, .grid-item {
+    width: 96%;
+    margin: 1% 2%;
+}
+
+.filter-btn, .filter-btn-selected {
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.875em;
+    margin: 5px 10px;
+    transition: 1s;
+}
+
+.filter-btn {
+    background-color: #F0F1F1;
+    color: #69221E;
+}
+
+.filter-btn-selected {
+    background-color: #69221E;
+    color: #F0F1F1;
+}
+
+.filter-btn:hover {
+    background-color: #dedede;
+    transition: 1s;
+}
+
+.project-hide {
+    display: none;
+}
+
+/* Typewriter lib */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    margin: 15px 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 1.5em;
+    color: #69221E;
+}
+
+.row [class^="col"] {
+    margin: .3rem 2%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.icon {
+    margin-right: 15px;
+    width: 28px;
+    height: auto;
+}
+
+.default-btn {
+    width: 220px;
+    height: 50px;
+    background-color: #F0F1F1;
+    border: none;
+    margin: 15px 0;
+    color: #69221E;
+    font-size: 1.25em;
+    transition: .3s ease-in;
+}
+
+.default-btn:hover {
+    background-color: #dedede;
+    transition: .3s ease-out;
+}
+
+.p-item {
+    background-color: #F0F1F1;
+    text-decoration: none;
+}
+
+.p-img {
+    width: 100%;
+    height: auto;
+}
+
+.p-infos {
+    background-color: #69221E;
+    padding: 10px;
+    transition: 1s;
+}
+
+.p-title, .p-cat {
+    color: #F0F1F1;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.p-title {
+    font-weight: bold;
+}
+
+.p-cat {
+    font-size: 0.850em;
+}
+
+.p-btn {
+    float: right;
+    margin: 0;
+    padding-top: 7px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.clearfix {
+    clear:both;
+}
+
+html {
+    color: #222;
+    font-size: 0.875em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    width: 75%;
+    margin: 1em auto;
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #F0F1F1;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-color: #F0F1F1;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0;
+}
+
+.header-container {
+    background-color: #69221E;
+    padding: 0px 15px;
+}
+
+.title {
+    color: #F0F1F1;
+    font-size: 1.625em;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav {
+    font-size: 0.875em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #F0F1F1;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main-container {
+    min-height: 86%;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.container {
+    background-color: white;
+}
+
+.footer-container {
+    background-color: #69221E;
+}
+
+.footer-container footer {
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer p {
+    color: #F0F1F1;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 30%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+
+    /* Isotope */
+    .grid-sizer, .grid-item {
+        width: 29.33%;
+    }
+
+    input, textarea {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
