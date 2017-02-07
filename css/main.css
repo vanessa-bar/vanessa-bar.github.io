@@ -170,8 +170,7 @@ p {
     height: auto;
 }
 
-.default-btn {
-    width: 220px;
+.big-btn, .default-btn {
     height: 50px;
     background-color: #F0F1F1;
     border: none;
@@ -181,9 +180,22 @@ p {
     transition: .3s ease-in;
 }
 
-.default-btn:hover {
+.big-btn:hover, .default-btn:hover {
     background-color: #dedede;
     transition: .3s ease-out;
+}
+
+.big-btn:active, .default-btn:active {
+    background-color: #69221E;
+    color: #F0F1F1;
+}
+
+.default-btn {
+    width: 220px;
+}
+
+.big-btn {
+    width: 300px;
 }
 
 .p-item {
