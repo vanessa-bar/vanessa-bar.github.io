@@ -427,6 +427,8 @@ footer p {
         margin-bottom: 0;
     }
 
+
+
     nav li:first-child a {
         margin-left: 0;
     }
@@ -461,6 +463,10 @@ footer p {
     nav {
         float: right;
         width: 30%;
+    }
+
+    .project-nav {
+        float: left;
     }
 
 /* ============
