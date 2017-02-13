@@ -308,10 +308,6 @@
 			  }
 			});
 
-			grid.imagesLoaded().progress( function() {
-			  grid.isotope('layout');
-			});
-
 			// filter items on button click
 			$('.filters-button-group').on( 'click', 'button', function() {
 				if ($(this).attr('class') == "filter-btn") {
