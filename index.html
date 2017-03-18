@@ -64,6 +64,13 @@
             		</div>
 
             		<div class="row center">
+            			<div class="col-2"></div>
+            			<div class="col-8">
+            				<p class="bold">Je recherche actuellement un stage de 10 semaines (2 mois et demi) dans le graphisme, la programmation Android ou sur Unity.</p>
+            			</div>
+            		</div>
+
+            		<div class="row center">
             			<a href="assets/CV.pdf"><button class="default-btn"><img class="icon" src="assets/newspaper.svg" alt=""/>Télécharger mon CV</button></a>
             		</div>
 
@@ -88,7 +95,7 @@
             					<button class="filter-btn" data-filter=".jeux">Jeux-vidéo</button>
             					<button class="filter-btn" data-filter=".web">Web</button>
             					<button class="filter-btn" data-filter=".graph">Graphisme</button>
-            					<button class="filter-btn" data-filter=".son">Son</button>
+            					<!--<button class="filter-btn" data-filter=".son">Son</button>-->
             					<button class="filter-btn" data-filter=".prog">Programmation</button>
             					<button class="filter-btn" data-filter=".anim">Animation</button>
             					<button class="filter-btn" data-filter=".photo">Photographie</button>
@@ -97,6 +104,20 @@
 
 	            		<div class="grid">
 	            			<div class="grid-sizer"></div>
+	            			<div class="grid-item graph web prog">
+	            				<a class="p-item" href="friendship-troopers.html">
+	            					<img class="p-img" src="assets/preview/ftroopers.jpg" alt=""/>
+	   								<div class="p-infos">
+	   									<img class='icon p-btn' src='assets/info.svg' alt=''/>
+	   									<p class="p-title">Friendship Troopers</p>
+	   									
+	   									<p class="p-cat">Graphisme, Web, Programmation</p>
+	   									<div class="clearfix"></div>
+	   								</div>
+
+	            				</a>
+	            			</div>
+
 	            			<div class="grid-item jeux prog">
 	            				<a class="p-item" href="vr-language-learning.html">
 	            					<img class="p-img" src="assets/preview/vr-language.jpg" alt=""/>
@@ -135,6 +156,19 @@
 	            				</a>
 	            			</div>
 
+	            			<div class="grid-item anim">
+	            				<a class="p-item" href="creation-gifs.html">
+	            					<img class="p-img" src="assets/preview/creationgif.jpg" alt=""/>
+	   								<div class="p-infos">
+	   									<img class='icon p-btn' src='assets/info.svg' alt=''/>
+	   									<p class="p-title">Création de GIFs</p>
+	   									
+	   									<p class="p-cat">Animation</p>
+	   									<div class="clearfix"></div>
+	   								</div>
+	            				</a>
+	            			</div>
+
 	            			<div class="grid-item prog web graph">
 	            				<a class="p-item" href="out-of-time.html">
 	            					<img class="p-img" src="assets/preview/out-of-time.jpg" alt=""/>
@@ -149,7 +183,7 @@
 
 	            			<div class="grid-item prog">
 	            				<a class="p-item" href="imagimp.html">
-	            					<img class="p-img" src="assets/preview/default.jpg" alt=""/>
+	            					<img class="p-img" src="assets/preview/imagimp.jpg" alt=""/>
 	   								<div class="p-infos">
 	   									<img class='icon p-btn' src='assets/info.svg' alt=''/>
 	   									<p class="p-title">ImaGimp</p>
@@ -171,7 +205,7 @@
 	            				</a>
 	            			</div>
 
-	            			<div class="grid-item son">
+	            			<!--<div class="grid-item son">
 	            				<a class="p-item" href="projet-sonore.html">
 	            					<img class="p-img" src="assets/preview/default.jpg" alt=""/>
 	   								<div class="p-infos">
@@ -181,11 +215,11 @@
 	   									<div class="clearfix"></div>
 	   								</div>
 	            				</a>
-	            			</div>
+	            			</div>-->
 
 	            			<div class="grid-item anim">
 	            				<a class="p-item" href="bras-mecanique.html">
-	            					<img class="p-img" src="assets/preview/default.jpg" alt=""/>
+	            					<img class="p-img" src="assets/preview/robot.jpg" alt=""/>
 	   								<div class="p-infos">
 	   									<img class='icon p-btn' src='assets/info.svg' alt=''/>
 	   									<p class="p-title">Bras mécanique</p>
@@ -197,7 +231,7 @@
 
 	            			<div class="grid-item graph">
 	            				<a class="p-item" href="cahier-tendance.html">
-	            					<img class="p-img" src="assets/preview/default.jpg" alt=""/>
+	            					<img class="p-img" src="assets/preview/cahiertendance.jpg" alt=""/>
 	   								<div class="p-infos">
 	   									<img class='icon p-btn' src='assets/info.svg' alt=''/>
 	   									<p class="p-title">Cahier de tendance</p>
@@ -323,7 +357,7 @@
 			});
 
 			  // combine inclusive filters
-			  var filterValue = inclusives.length ? inclusives.join('') : '*';
+			  var filterValue = inclusives.length ? inclusives.join(', ') : '*';
 
 			  grid.isotope({ filter: filterValue });
 			});
