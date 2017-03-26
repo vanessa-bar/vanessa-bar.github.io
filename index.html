@@ -346,43 +346,43 @@
 			);
 
 			/* Isotope */
-			var $grid = $('.grid').isotope({
-			  // set itemSelector so .grid-sizer is not used in layout
-			  itemSelector: '.grid-item',
-			  percentPosition: true,
-			  masonry: {
-			    // use element for option
-			    columnWidth: '.grid-sizer'
-			  }
-			});
-
-			// filter items on button click
-			$('.filters-button-group').on( 'click', 'button', function() {
-				if ($(this).attr('class') == "filter-btn") {
-					$(this).attr('class', "filter-btn-selected");
-				} else {
-					$(this).attr('class', "filter-btn");
-				}
-
-			// On récupére tous les hashtags sélectionnés
-			var inclusives = [];
-			$('.filter-btn-selected').each(function() {
-				inclusives.push($(this).attr('data-filter'));
-			});
-
-			  // combine inclusive filters
-			  var filterValue = inclusives.length ? inclusives.join(', ') : '*';
-
-			  grid.isotope({ filter: filterValue });
-			});
-
-			$('#project-btn').click(function() {
-				if ($(this).attr('class') == "default-btn") {
-					$(this).attr('class', "default-btn selected");
-					
-				} else {
-					$(this).attr('class', "default-btn");
-				}
+ 			var grid = $('.grid').isotope({
+ 			  // set itemSelector so .grid-sizer is not used in layout
+ 			  itemSelector: '.grid-item',
+ 			  percentPosition: true,
+ 			  masonry: {
+ 			    // use element for option
+ 			    columnWidth: '.grid-sizer'
+ 			  }
+ 			});
+ 
+ 			// filter items on button click
+ 			$('.filters-button-group').on( 'click', 'button', function() {
+ 				if ($(this).attr('class') == "filter-btn") {
+ 					$(this).attr('class', "filter-btn-selected");
+ 				} else {
+ 					$(this).attr('class', "filter-btn");
+ 				}
+ 
+ 			// On récupére tous les hashtags sélectionnés
+ 			var inclusives = [];
+ 			$('.filter-btn-selected').each(function() {
+ 				inclusives.push($(this).attr('data-filter'));
+ 			});
+ 
+ 			  // combine inclusive filters
+ 			  var filterValue = inclusives.length ? inclusives.join('') : '*';
+ 
+ 			  grid.isotope({ filter: filterValue });
+ 			});
+ 
+ 			$('#project-btn').click(function() {
+ 				if ($(this).attr('class') == "default-btn") {
+ 					$(this).attr('class', "default-btn selected");
+ 					
+ 				} else {
+ 					$(this).attr('class', "default-btn");
+ 				}
 			});
 
 			$(function(){
